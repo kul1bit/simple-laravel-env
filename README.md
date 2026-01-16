@@ -30,8 +30,9 @@ After the script finishes:
 
 ```bash
 cd my-project
-docker-compose run --rm php composer create-project laravel/laravel .
-docker-compose up -d
+# Update .env values for your project, and if needed sync them in docker-compose.yml
+docker compose build
+docker compose up -d
 ```
 
 ## Install by Cloning the Project
@@ -49,6 +50,7 @@ Then follow the same next steps shown by the script:
 
 ```bash
 cd my-project
-docker-compose run --rm php composer create-project laravel/laravel .
-docker-compose up -d
+# Update .env values for your project, and if needed sync them in docker-compose.yml
+docker compose build
+docker compose up -d
 ```
